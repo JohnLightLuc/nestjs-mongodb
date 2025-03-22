@@ -1,0 +1,348 @@
+{
+	"info": {
+		"_postman_id": "22d762ad-f498-441f-bdbc-b888f0c9b50c",
+		"name": "NEST-MONGODB-API-DOC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28699435",
+		"_collection_link": "https://lunar-resonance-855470.postman.co/workspace/Personal-Workspace~44e3e5e4-591a-4b8f-999b-4756e2b996fb/collection/28699435-22d762ad-f498-441f-bdbc-b888f0c9b50c?action=share&source=collection_link&creator=28699435"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Get users",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"John Light\",\n    \"email\": \"dev.johnlight@gmail.com\",\n    \"password\": \"1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/users",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"John Light\",\n    \"email\": \"dev.johnlight@gmail.com\",\n    \"password\": \"1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/users",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get user by ID Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Hello world\",\n    \"content\": \"Lorem Ipsum dolor\",\n    \"userId\": \"67dd0e572393da97f5dd5125\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/posts",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get user by ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"John Light\",\n    \"email\": \"dev.johnlight@gmail.com\",\n    \"password\": \"1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/users/67dcf8a8549f7643db3d3684",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"67dcf8a8549f7643db3d3684"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update user",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"JohnLight\",\n    \"email\": \"dev.johnlight@gmail.com\",\n    \"password\": \"1234\",\n    \"avatar\" : \"https://icons.veryicon.com/png/o/miscellaneous/user-avatar/user-avatar-male-5.png\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/users/67dcf8a8549f7643db3d3684",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"67dcf8a8549f7643db3d3684"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Posts",
+			"item": [
+				{
+					"name": "Create Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Les fondements de la clean architecture: une voie vers un code durable\",\n    \"content\": \"Dans un univers informatique où la complexité des systèmes ne cesse de croître, structurer son code devient une quête perpétuelle pour tout développeur en quête d’excellence. C’est dans cette optique que la Clean Architecture s’érige comme un phare dans la nuit, guidant les programmeurs vers des eaux plus sereines de la maintenabilité et de l’évolutivité. Conçue par Robert C. Martin, cette approche vise à organiser le code de manière à le rendre à la fois flexible et résilient face aux changements.\",\n    \"userId\": \"67dcf8a8549f7643db3d3684\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/posts",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Posts",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Les fondements de la clean architecture: une voie vers un code durable\",\n    \"content\": \"Dans un univers informatique où la complexité des systèmes ne cesse de croître, structurer son code devient une quête perpétuelle pour tout développeur en quête d’excellence. C’est dans cette optique que la Clean Architecture s’érige comme un phare dans la nuit, guidant les programmeurs vers des eaux plus sereines de la maintenabilité et de l’évolutivité. Conçue par Robert C. Martin, cette approche vise à organiser le code de manière à le rendre à la fois flexible et résilient face aux changements.\",\n    \"userId\": \"67dcf8a8549f7643db3d3684\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/posts",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Posts by ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Les fondements de la clean architecture: une voie vers un code durable\",\n    \"content\": \"Dans un univers informatique où la complexité des systèmes ne cesse de croître, structurer son code devient une quête perpétuelle pour tout développeur en quête d’excellence. C’est dans cette optique que la Clean Architecture s’érige comme un phare dans la nuit, guidant les programmeurs vers des eaux plus sereines de la maintenabilité et de l’évolutivité. Conçue par Robert C. Martin, cette approche vise à organiser le code de manière à le rendre à la fois flexible et résilient face aux changements.\",\n    \"userId\": \"67dcf8a8549f7643db3d3684\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/posts/67de7fc5075a1651b35bf881",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"posts",
+								"67de7fc5075a1651b35bf881"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Post",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Les fondements de la clean architecture: une voie vers un code durable\",\n    \"content\": \"Introduction: Dans un univers informatique où la complexité des systèmes ne cesse de croître, structurer son code devient une quête perpétuelle pour tout développeur en quête d’excellence. C’est dans cette optique que la Clean Architecture s’érige comme un phare dans la nuit, guidant les programmeurs vers des eaux plus sereines de la maintenabilité et de l’évolutivité. Conçue par Robert C. Martin, cette approche vise à organiser le code de manière à le rendre à la fois flexible et résilient face aux changements.\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/posts/67de7fc5075a1651b35bf881",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"posts",
+								"67de7fc5075a1651b35bf881"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete POST",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/posts/67de7fc5075a1651b35bf881",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"posts",
+								"67de7fc5075a1651b35bf881"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
